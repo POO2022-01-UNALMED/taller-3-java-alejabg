@@ -4,7 +4,7 @@ public class TV {
 
     private Marca marca;
     private int canal = 1;
-    private int precio = 500;
+    public int precio = 500;
     private boolean estado;
     private int volumen = 1;
     public Control control;
@@ -13,7 +13,7 @@ public class TV {
     public TV(Marca marca, boolean estado){
         this.marca = marca;
         this.estado = estado;
-        this.numTV++;
+        TV.numTV++;
     }
 
     public static int getNumTV(){
