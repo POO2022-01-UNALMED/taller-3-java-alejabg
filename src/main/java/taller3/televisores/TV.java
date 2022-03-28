@@ -4,7 +4,7 @@ public class TV {
 
     private Marca marca;
     private int canal = 1;
-    public int precio = 500;
+    private int precio = 500;
     private boolean estado;
     private int volumen = 1;
     public Control control;
@@ -70,14 +70,14 @@ public class TV {
     }
 
     public void canalUp(){
-        if(this.estado == true && this.canal >= 1 && this.canal < 120){
+        if(this.estado == true && this.canal < 120){
             this.canal++;
         }else{
             return;
         }
     }
     public void canalDown(){
-        if(this.estado == true && this.canal > 1 && this.canal <= 120){
+        if(this.estado == true && this.canal > 1){
             this.canal--;
         }else{
             return;
