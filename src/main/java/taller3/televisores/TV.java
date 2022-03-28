@@ -55,7 +55,10 @@ public class TV {
         return canal;
     }
     public void setCanal(int canal){
-        this.canal = canal;
+        if((canal >=1)&&(canal <= 120) && (this.estado == true)){
+            this.canal = canal;
+        }
+        
     }
 
     public void turnOn(){
